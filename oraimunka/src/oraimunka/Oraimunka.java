@@ -6,12 +6,14 @@ public class Oraimunka {
 
     
     public static void main(String[] args) {
-        
+        int szam1 = 3;
+        int szam2 = 6;
+        kiir(szam1, szam2);
     }
     
-    private static int elsonSzamOsszege(int z){
+    private static int elso10SzamOsszege(){
         int osszeg = 0;
-        for (int i = 0; i < z; i++) {
+        for (int i = 0; i < 10; i++) {
             osszeg += i;
             
         }
@@ -19,10 +21,12 @@ public class Oraimunka {
         }
     
     private static void kiir(int a, int b){
-        System.out.printf("%d + %d =%d\n", a, b, a+b);
-        System.out.printf("Az els? %d szám összege: %d\n", a, b);
-        
+        System.out.printf("%d + %d = %d\n", a, b, osszead(a, b));
+        System.out.printf("Az els? 10 szám összege: %d\n", elso10SzamOsszege());
+    
             
     }
-    
+    private static int osszead(int a, int b){
+        return a+b;
+    }
     }
