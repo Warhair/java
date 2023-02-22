@@ -9,20 +9,20 @@ public class Oraimunka {
         
     }
     
-    private static void elso10SzamOsszege(){
+    private static int elsonSzamOsszege(int z){
         int osszeg = 0;
-        int db = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < z; i++) {
             osszeg += i;
-            db++;
+            
         }
-        osszead(osszeg, db);
+       return osszeg;
         }
     
-    private static void osszead(int a, int b){
+    private static void kiir(int a, int b){
         System.out.printf("%d + %d =%d\n", a, b, a+b);
         System.out.printf("Az els? %d szám összege: %d\n", a, b);
         
             
     }
+    
     }
