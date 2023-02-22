@@ -4,19 +4,22 @@ import java.util.Random;
 
 
 public class Equalizer {
-    
+    private static Random rng = new Random();
 
 public static void main(String[] args) {
- int szam = 5;
- kiir(szin(szam));
+ foprogram();
 }
- private static String szin(int a){
-     Random rng = new Random();
+
+    private static void foprogram() {
+        kiir(eq());
+    }
+ private static String eq(){
+     
      String s = "";
-     for (int i = 0; i < a; i++) {
+     for (int i = 0; i < 5; i++) {
          int szam = rng.nextInt(5) + 3;
          for (int j = 0; j < szam; j++) {
-             s += "\u001B[45m";
+             s += "\u001B[45m" + " ";
          }
          s +="\n";
  
