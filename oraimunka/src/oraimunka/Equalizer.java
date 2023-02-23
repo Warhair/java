@@ -14,7 +14,7 @@ public static void main(String[] args) {
         kiir(eq());
         kiir(eq(12, true));
         kiir(eq());
-        kiir(eq());
+        kiir(eq(false));
         kiir(eq(8, false));
         kiir(eq());
     }
@@ -45,6 +45,16 @@ private static String eq(int szam, boolean vez){
    }
    return s;
 }
+private static String eq(boolean vez){
+    String s = "";
+    if (vez == true){
+       s = eq();     
+   }
+   else{
+   }
+   return s;
+}
+
  private static void kiir(String szineket){
      System.out.println(szineket);
  }
