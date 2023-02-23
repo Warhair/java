@@ -51,6 +51,7 @@ private static String eq(boolean vez){
        s = eq();     
    }
    else{
+        
    }
    return s;
 }
