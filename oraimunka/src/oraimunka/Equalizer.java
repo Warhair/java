@@ -12,20 +12,28 @@ public static void main(String[] args) {
 
     private static void foprogram() {
         kiir(eq());
+        kiir(eq(12));
+        kiir(eq());
+        kiir(eq());
+        kiir(eq(8));
+        kiir(eq());
     }
- private static String eq(){
-     
+ 
+  private static String eq(){   
      String s = "";
-     for (int i = 0; i < 5; i++) {
          int szam = rng.nextInt(5) + 3;
          for (int j = 0; j < szam; j++) {
              s += "\u001B[45m" + " ";
          }
-         s +="\n";
- 
-     }
      return s;
 
+}
+private static String eq(int szam){
+    String s = "";
+         for (int j = 0; j < szam; j++) {
+             s += "\u001B[45m" + " ";
+         }
+     return s;
 }
  private static void kiir(String szineket){
      System.out.println(szineket);
