@@ -10,12 +10,13 @@ public static void main(String[] args) {
  private static void foprogram() {
         kiir(qr());
         kiir(qr(true));
+        kiir(qr(15));
  }
- private static String qr(){
+ private static String qr(int meret){
       String s = "";
          
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 5; j++) {
+        for (int i = 0; i < meret; i++) {
+            for (int j = 0; j < meret; j++) {
                 int szam = rng.nextInt(2);
                 if (szam == 1){
                     s += "*";
@@ -25,12 +26,18 @@ public static void main(String[] args) {
                 }
            
             }
-            if(i < 9){
+            if(i < meret-1){
                 s +="\n";
             }
      }
      return s;
  }
+ private static String qr(){
+      String s = "";
+      int szam = 5;
+         s = qr(szam);
+     return s;
+ }      
  private static String qr(boolean allit){
       String s = "";
       if(allit == true){
