@@ -22,9 +22,7 @@ public static void main(String[] args) {
   private static String eq(){   
      String s = "";
          int szam = rng.nextInt(5) + 3;
-         for (int j = 0; j < szam; j++) {
-             s += "\u001B[45m" + " ";
-         }
+         s = eq(szam);
      return s;
 
 }
